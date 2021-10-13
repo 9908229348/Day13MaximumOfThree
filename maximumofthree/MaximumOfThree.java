@@ -11,6 +11,10 @@ public class MaximumOfThree<T extends Comparable<T>> {
 		return MaximumOfThree.testMaximum(array);
 	}
 
+	public static <T> void printMax(T max) {
+		System.out.println("Maximum is :" + max);
+	}
+	
 	public static <T extends Comparable<T>> T testMaximum(T[] array) {
 		for (int i = 0; i < 4; i++) {
 			for (int j = i; j < 4; j++) {
@@ -21,7 +25,7 @@ public class MaximumOfThree<T extends Comparable<T>> {
 				}
 			}
 		}
-		System.out.println("Maximum is :"+ array[0]);
+		MaximumOfThree.printMax(array[0]);
 		return array[0];
 	}
 	
