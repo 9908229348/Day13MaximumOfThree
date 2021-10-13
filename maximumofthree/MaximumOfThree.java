@@ -1,8 +1,8 @@
 package maximumofthree;
 
 public class MaximumOfThree {
-	public static Float maxOfThree(Float x, Float y, Float z) {
-		Float max = x;
+	public static String maxOfThree(String x, String y, String z) {
+		String max = x;
 		if (y.compareTo(max) > 0)
 			max = y;
 		if (z.compareTo(max) > 0)
@@ -11,7 +11,7 @@ public class MaximumOfThree {
 	}
 
 	public static void main(String[] args) {
-		Float maximum = MaximumOfThree.maxOfThree(1121.5f, 193.3f, 254.4f);
-		System.out.println("Maximum of three floats is :" + maximum);
+		String maximum = MaximumOfThree.maxOfThree("Apple", "Banana", "Peach");
+		System.out.println("Maximum of three Strings is :" + maximum);
 	}
 }
